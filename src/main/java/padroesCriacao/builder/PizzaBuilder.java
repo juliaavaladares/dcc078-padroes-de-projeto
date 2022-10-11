@@ -9,7 +9,7 @@ public class PizzaBuilder {
 
     public Pizza build(){
         if (pizza.getTamanho() == 0) {
-            throw new IllegalArgumentException("Tamanho não informado");
+            throw new IllegalArgumentException("Pizza sem tamanho");
         }
         
         return pizza;
