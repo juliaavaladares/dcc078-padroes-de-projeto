@@ -4,15 +4,15 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import main.java.padroesCriacao.factoryMethod.*;
 
-class LogisticaMarinhaTest {
+public class LogisticaMarinhaTest {
     @Test
-    void deveBuscarPacoteComSucesso() {
+    public void deveBuscarPacoteComSucesso() {
         ILogistica logistica = LogisticaFactory.obterLogistica("Marinha");
         assertEquals("Busca pacote por vias marinhas", logistica.buscarPacote());
     }
 
     @Test
-    void deveEntregarPacoteComSucesso() {
+    public void deveEntregarPacoteComSucesso() {
         ILogistica logistica = LogisticaFactory.obterLogistica("Marinha");
         assertEquals("Entrega pacote por vias marinhas", logistica.entregar());
     }

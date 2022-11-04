@@ -5,7 +5,7 @@ public class LogisticaFactory{
         Class classe = null;
         Object objeto = null;
         try {
-            classe = Class.forName("main.Logistica" + tipoLogistica);
+            classe = Class.forName("main.java.padroesCriacao.factoryMethod.Logistica" + tipoLogistica);
             objeto = classe.newInstance();
         } catch (Exception ex) {
             throw new IllegalArgumentException("Logistica inexistente");

@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import main.java.padroesCriacao.prototype.*;
 
-class AtacanteTest {
+public class AtacanteTest {
     @Test
-    void testClone() throws CloneNotSupportedException {
+    public void testClone() throws CloneNotSupportedException {
         Atacante atacante = new Atacante(123456, "Julia",new Desempenho("ala", 3,2, 0),
         "Brasil", "Sport");
 

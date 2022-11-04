@@ -19,7 +19,7 @@ public class CruzeiroTest {
         
         float pontuacaoRecebida = cruzeiro.calculaScoreTime(atacante, zagueiro);
 
-        assertEquals(pontuacaoEsperada, pontuacaoRecebida);
+        assertEquals(pontuacaoEsperada, pontuacaoRecebida, 0.0);
     }
     
 }
