@@ -1,6 +1,6 @@
 package test.java.padresEstruturais.proxy;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.junit.Assert.fail;
 
 
@@ -16,7 +16,7 @@ public class PagamentoTest {
 
         float limiteEsperado = 1000;
 
-        assertEquals(limiteEsperado, cartaoDeDebito.consultaLimite());
+        assertEquals(limiteEsperado, cartaoDeDebito.consultaLimite(), 0);
 
     }
 
@@ -28,7 +28,7 @@ public class PagamentoTest {
         String mensagemPagemnto = cartaoDeDebito.pagaProduto(700, "123456");
 
         assertEquals("Produto pago com sucesso", mensagemPagemnto);
-        assertEquals(300, cartaoDeDebito.consultaLimite());
+        assertEquals(300, cartaoDeDebito.consultaLimite(), 0);
 
     }
 
