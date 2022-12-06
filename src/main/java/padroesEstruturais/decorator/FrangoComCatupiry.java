@@ -39,10 +39,13 @@ public class FrangoComCatupiry extends PizzaRecheioDecorator {
         switch (tamanhoPizza) {
             case PEQUENA:
                 precoFinal = (float) 35.99;
+                break;
             case MEDIA:
                 precoFinal = (float) 55.99;
+                break;
             case GRANDE: 
                 precoFinal = (float) 75.99;
+                break;
             default:
                 precoFinal = (float) 0.0;
         }

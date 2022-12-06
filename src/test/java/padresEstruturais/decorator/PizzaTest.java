@@ -6,10 +6,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-class PizzaTest {
+public class PizzaTest {
 
     @Test
-    void deveRetornarPrecoPizzaRecheioPadrao(){
+    public void deveRetornarPrecoPizzaRecheioPadrao(){
         
         Pizza pizza = new Recheio("PEQUENA", false);
 
@@ -19,17 +19,18 @@ class PizzaTest {
     }
 
     @Test
-    void deveRetornarPrecoPizzaRecheioFrangoPequena(){
+   public void deveRetornarPrecoPizzaRecheioFrangoPequena(){
         Recheio recheio = new Recheio();
         Pizza pizzaFrango = new FrangoComCatupiry(recheio, "PEQUENA", false);
 
         float precoEsperado = (float) 35.99;
+        float precoRecebido = (float) pizzaFrango.getPrecoPizza();
 
-        assertEquals(precoEsperado, pizzaFrango.getPrecoPizza(), 0);
+        assertEquals(precoEsperado, precoRecebido, 0);
     }
 
     @Test
-    void deveRetornarPrecoPizzaRecheioFrangoMedia(){
+    public void deveRetornarPrecoPizzaRecheioFrangoMedia(){
         Recheio recheio = new Recheio();
         Pizza pizzaFrango = new FrangoComCatupiry(recheio, "MEDIA", false);
 

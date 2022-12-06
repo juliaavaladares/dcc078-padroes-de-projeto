@@ -8,7 +8,7 @@ import org.junit.Test;
 public class MobileTest {
 
     @Test
-    void deveRetornarMobileComMelhorPreco() {
+    public void deveRetornarMobileComMelhorPreco() {
         Mobile mobile = new Mobile();
 
         float melhorPrecoMobile = mobile.melhorPreco();
