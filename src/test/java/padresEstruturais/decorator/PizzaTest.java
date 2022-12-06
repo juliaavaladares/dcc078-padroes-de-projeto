@@ -38,5 +38,26 @@ public class PizzaTest {
 
         assertEquals(precoEsperado, pizzaFrango.getPrecoPizza(), 0);
     }
+
+    @Test
+    public void deveRetornarPrecoPizzaRecheioFrangoGrande(){
+        Recheio recheio = new Recheio();
+        Pizza pizzaFrango = new FrangoComCatupiry(recheio, "GRANDE", false);
+
+        float precoEsperado = (float) 75.99;
+
+        assertEquals(precoEsperado, pizzaFrango.getPrecoPizza(), 0);
+    }
+
+    @Test
+    public void deveRetornarPrecoPizzaRecheioFrangoPequenaComBorda(){
+        Recheio recheio = new Recheio();
+        Pizza pizzaFrango = new FrangoComCatupiry(recheio, "PEQUENA", true);
+
+        float precoEsperado = (float) (35.99 * 1.2);
+        Math.round(precoEsperado);
+
+        assertEquals(precoEsperado, pizzaFrango.getPrecoPizza(), 0.5);
+    }
     
 }
